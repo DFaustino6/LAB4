@@ -21,7 +21,7 @@ CREATE TABLE `microposts` (
  `content` text,
  `user_id` int(11) default NULL,
  `created_at` datetime NOT NULL,
- `updated_at` datetime default NULL,
+ `last_updated_at` datetime default NULL,
  PRIMARY KEY (`id`),
  KEY `fk_user_id` (`user_id`),
  CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`)
