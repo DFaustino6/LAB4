@@ -27,3 +27,4 @@ CREATE TABLE `microposts` (
  CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`)
 REFERENCES `users` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
