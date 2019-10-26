@@ -31,7 +31,7 @@ if($db) {
      $tuple[$i] = mysql_fetch_array($result,MYSQL_ASSOC);
 
   // faz a atribuição das variáveis do template smarty
-  $smarty->assign('user',$tuple);
+  $smarty->assign('users',$tuple);
 
   // Mostra a tabela
   $smarty->display('index.tpl');
