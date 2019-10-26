@@ -111,25 +111,25 @@
               </div>
               <div class="row" style="padding: 1%" >
                 <div class="col-sm-7">
-                    <h4 style="color:white;">Created by:{USERNAME}</h4>
+                    <h4 style="color:white;">Created by:{$post.name}</h4>
                 </div>
                 <div class="col-sm-5">
-                  <h4 style="color:white;text-align: right">Last updated:{DATE}</h4>
+                  <h4 style="color:white;text-align: right">Last updated:{$post.updated_at}</h4>
                 </div>
               </div>
             </div>
             <div class="panel-body" style="background-color: white;border-style:solid;border-width: thin;border-radius:5px">
-                <h4 style="color: black">{POST 1}</h4>
+                <h4 style="color: black">{$post.content}</h4>
             </div>
             <div class="panel-footer" style="background-color:#0099ff">
               <div class="row" style="padding: 1%; "> 
                 <div class="col-sm-7">
-                  <h4 style="color: white"> Created:{DATE}</h4>
+                  <h4 style="color: white"> Created:{$post.created_at}</h4>
                       </div>
                       <div class="col-sm-5">
-                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;{UPVOTE Nº}</button>
+                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;UPVOTE N</button>
                           
-                        <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;{DOWNVOTE}</button>
+                        <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;DOWNVOTE</button>
                       </div>  
                     </div>
                   </div>  
