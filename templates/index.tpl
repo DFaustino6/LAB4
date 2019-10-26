@@ -127,9 +127,9 @@
                   <h4 style="color: white"> Created:{$post.created_at}</h4>
                       </div>
                       <div class="col-sm-5">
-                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;UPVOTE N</button>
+                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;{$post.UPVOTE}</button>
                           
-                        <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;DOWNVOTE</button>
+                        <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;{$post.DOWNVOTE}</button>
                       </div>  
                     </div>
                   </div>  
