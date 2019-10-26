@@ -34,8 +34,11 @@ if($db) {
      $tuple[$i] = mysql_fetch_array($result,MYSQL_ASSOC);
 
   // faz a atribuição das variáveis do template smarty
-  $smarty->assign('users',$tuple);
-
+  $smarty->assign('posts',$tuple);
+  $smarty->assign('MENU1',"SubForum1");
+  $smarty->assign('MENU2',"SubForum2");
+  $smarty->assign('MENU3',"SubForum3");
+  $smarty->assign('FORUMName',"DAW Lab");
   // Mostra a tabela
   $smarty->display('index.tpl');
 

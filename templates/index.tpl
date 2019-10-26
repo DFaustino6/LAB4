@@ -27,14 +27,14 @@
 <nav class="navbar navbar-inverse" style="background-color: #006699; border-color: #006699">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" style="color: white" href="#">{FORUM Name}</a>
+      <a class="navbar-brand" style="color: white" href="#">{FORUMName}</a>
     </div>
     <ul class="nav navbar-nav navbar-left">
         <li class="dropdown table-bordered" ><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; background-color: #006699">Menu&nbsp;<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">{MENU 1}</a></li>
-            <li><a href="#">{MENU 2}</a></li>
-            <li><a href="#">{MENU 3}</a></li>
+            <li><a href="#">{MENU1}</a></li>
+            <li><a href="#">{MENU2}</a></li>
+            <li><a href="#">{MENU3}</a></li>
           </ul> 
         </li>
         <li>
@@ -53,7 +53,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#" style="color: white">Logout</a></li>
       <li><a href="#" style="color: white">Profile</a></li>
-      <li><a style="color: white;">WELCOME {USERNAME}</a></li>
+      <li><a style="color: white;">WELCOME USERNAME</a></li>
     </ul>
   </div>
 </nav>
