@@ -101,6 +101,7 @@
     <div class="col-sm-8">
       <div class="well" >
         <div class="panel-group">
+          {foreach item=post from=$posts}
           <div class="panel panel-default" style="background-color:#0099ff ">
             <div class="panel panel-heading" style="background-color:#0099ff">
               <div class="media">
@@ -133,38 +134,7 @@
                     </div>
                   </div>  
           </div>
-          <div class="panel panel-default" style="background-color:#0099ff ">
-            <div class="panel panel-heading" style="background-color:#0099ff">
-              <div class="media">
-                <div class="media-top">
-                  <img src="img_avatar1.png" class="media-object" style="width:12%">
-                </div>
-              </div>
-              <div class="row" style="padding: 1%" >
-                <div class="col-sm-7">
-                    <h4 style="color:white;">Created by:{USERNAME}</h4>
-                </div>
-                <div class="col-sm-5">
-                  <h4 style="color:white;text-align: right">Last updated:{DATE}</h4>
-                </div>
-              </div>
-            </div>
-            <div class="panel-body" style="background-color: white;border-style:solid;border-width: thin;border-radius:5px">
-                <h4 style="color: black">{POST 2}</h4>
-            </div>
-            <div class="panel-footer" style="background-color:#0099ff">
-              <div class="row" style="padding: 1%; "> 
-                <div class="col-sm-7">
-                  <h4 style="color: white"> Created:{DATE}</h4>
-                      </div>
-                      <div class="col-sm-5">
-                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;{UPVOTE Nº}</button>
-                          
-                        <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;{DOWNVOTE}</button>
-                      </div>  
-                    </div>
-                  </div>  
-          </div>
+          {/foreach}
         </div>
       </div>  
     </div>
