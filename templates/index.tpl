@@ -1,24 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html>
-<head>
-   <title>base de dados de filmes</title>
-   <meta  http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-</head>
-<body>
 
 
-<h2>Filmes</h2>
-<table border=2>
-<tr>
-  <th align=left>id</th>
-  <th align=left>name</th>
-  <th align=left>email</th>
-</tr>
-
-
-{foreach item=user from=$users}
+<!--{foreach item=user from=$users}
 
 
 <tr>
@@ -27,12 +9,174 @@
   <td align=right>{$user.email}</td>
 </tr>
 
-{/foreach}
+{/foreach}-->
 
+<!DOCTYPE html>
+<hmtl>
+<head>
+  <title>FORUM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        .carousel-inner img {
+            margin: auto;
+        }
+  </style>
+</head>
+<body>
 
+<nav class="navbar navbar-inverse" style="background-color: #006699; border-color: #006699">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color: white" href="#">{FORUM Name}</a>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+        <li class="dropdown table-bordered" ><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; background-color: #006699">Menu&nbsp;<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">{MENU 1}</a></li>
+            <li><a href="#">{MENU 2}</a></li>
+            <li><a href="#">{MENU 3}</a></li>
+          </ul> 
+        </li>
+        <li>
+          <form class="navbar-form nav-letf" action="/action_page.php">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+              </div>
+          </div>
+        </form>
+        </li>
+        </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" style="color: white">Logout</a></li>
+      <li><a href="#" style="color: white">Profile</a></li>
+      <li><a style="color: white;">WELCOME {USERNAME}</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-</table>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img1.png" >
+    </div>
 
+    <div class="item">
+      <img src="img2.png" >
+    </div>
+
+    <div class="item">
+      <img src="img3.png" >
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container" style="padding-top: 2%">
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="well text-center">
+        <a href="#"><img src="plus.png" style="width: 60%;" class="center"></a>
+        <p>Add new post</p>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="well" >
+        <div class="panel-group">
+          <div class="panel panel-default" style="background-color:#0099ff ">
+            <div class="panel panel-heading" style="background-color:#0099ff">
+              <div class="media">
+                <div class="media-top">
+                  <img src="img_avatar1.png" class="media-object" style="width:12%">
+                </div>
+              </div>
+              <div class="row" style="padding: 1%" >
+                <div class="col-sm-7">
+                    <h4 style="color:white;">Created by:{USERNAME}</h4>
+                </div>
+                <div class="col-sm-5">
+                  <h4 style="color:white;text-align: right">Last updated:{DATE}</h4>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body" style="background-color: white;border-style:solid;border-width: thin;border-radius:5px">
+                <h4 style="color: black">{POST 1}</h4>
+            </div>
+            <div class="panel-footer" style="background-color:#0099ff">
+              <div class="row" style="padding: 1%; "> 
+                <div class="col-sm-7">
+                  <h4 style="color: white"> Created:{DATE}</h4>
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;{UPVOTE Nº}</button>
+                          
+                        <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;{DOWNVOTE}</button>
+                      </div>  
+                    </div>
+                  </div>  
+          </div>
+          <div class="panel panel-default" style="background-color:#0099ff ">
+            <div class="panel panel-heading" style="background-color:#0099ff">
+              <div class="media">
+                <div class="media-top">
+                  <img src="img_avatar1.png" class="media-object" style="width:12%">
+                </div>
+              </div>
+              <div class="row" style="padding: 1%" >
+                <div class="col-sm-7">
+                    <h4 style="color:white;">Created by:{USERNAME}</h4>
+                </div>
+                <div class="col-sm-5">
+                  <h4 style="color:white;text-align: right">Last updated:{DATE}</h4>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body" style="background-color: white;border-style:solid;border-width: thin;border-radius:5px">
+                <h4 style="color: black">{POST 2}</h4>
+            </div>
+            <div class="panel-footer" style="background-color:#0099ff">
+              <div class="row" style="padding: 1%; "> 
+                <div class="col-sm-7">
+                  <h4 style="color: white"> Created:{DATE}</h4>
+                      </div>
+                      <div class="col-sm-5">
+                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;{UPVOTE Nº}</button>
+                          
+                        <button type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;{DOWNVOTE}</button>
+                      </div>  
+                    </div>
+                  </div>  
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="col-sm-2">
+      <div class="well text-center">
+        <a href="#" style="font-size: 4em"><span  class="glyphicon glyphicon-bell" ></span></a>
+        <p>Notification</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>
