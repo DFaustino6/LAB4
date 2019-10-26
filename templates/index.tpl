@@ -123,13 +123,13 @@
             </div>
             <div class="panel-footer" style="background-color:#0099ff">
               <div class="row" style="padding: 1%; "> 
-                <div class="col-sm-7">
+                <div class="col-sm-9">
                   <h4 style="color: white"> Created:{$post.created_at}</h4>
                       </div>
-                      <div class="col-sm-5">
-                        <button type="button" class="btn btn-success" style="align-content: right"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;{$post.upvotes}</button>
+                      <div class="col-sm-3">
+                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp;{$post.upvotes}</button>
                           
-                        <button type="button" class="btn btn-danger" style="align-content: right"> <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;{$post.downvotes}</button>
+                        <button type="button" class="btn btn-danger" > <span class="glyphicon glyphicon-arrow-down"></span>&nbsp;{$post.downvotes}</button>
                       </div>  
                     </div>
                   </div>  
