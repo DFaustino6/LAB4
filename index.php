@@ -40,7 +40,7 @@ if($db) {
   $smarty->assign('MENU3',"SubForum3");
   $smarty->assign('FORUMName',"DAW Lab");
   // Mostra a tabela
-  $smarty->display('index.tpl');
+  $smarty->display('index_template.tpl');
 
   // fechar a ligação à base de dados
   mysql_close($db);
